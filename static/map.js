@@ -612,16 +612,8 @@ function processGyms(i, item) {
         item.marker = setupGymMarker(item);
         map_data.gyms[item.gym_id] = item;
     }
-        });
-        clearOutOfBoundsMarkers(map_pokemons);
-        clearOutOfBoundsMarkers(map_lure_pokemons);
-        clearOutOfBoundsMarkers(map_gyms);
-        clearOutOfBoundsMarkers(map_pokestops);
-        clearOutOfBoundsMarkers(map_scanned);
-        clearStaleMarkers();
-        updateList();
-    });
-};
+    
+}
 
 function processScanned(i, item) {
     if (!localStorage.showScanned) {
