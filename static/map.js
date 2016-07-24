@@ -45,7 +45,6 @@ var excludedPokemon = [];
 var notifiedPokemon = [];
 
 $selectExclude.on("change", function (e) {
-  var test = $selectExclude.val();
     excludedPokemon = $selectExclude.val().map(Number);
     clearStaleMarkers();
     updateList();
@@ -384,7 +383,7 @@ function updateList() {
   $.each(map_pokemons, function(key, value) {
     $('#list-content').append(getListCard(value));
   });
-  var test = $('a[href="#hide"]').on('click', function(event){
+  $('a[href="#hide"]').on('click', function(event){
     var anchor = event.currentTarget;
     var id = anchor.dataset.id;
     var old = $selectExclude.val();
