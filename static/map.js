@@ -117,7 +117,6 @@ function initMap() {
     google.maps.event.addListenerOnce(map, 'idle', function(){
         updateMap();
     });
-
 };
 
 function createSearchMarker() {
@@ -612,7 +611,6 @@ function processGyms(i, item) {
         item.marker = setupGymMarker(item);
         map_data.gyms[item.gym_id] = item;
     }
-    
 }
 
 function processScanned(i, item) {
