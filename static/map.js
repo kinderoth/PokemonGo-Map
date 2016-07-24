@@ -115,7 +115,7 @@ function initMap() {
     google.maps.event.addListenerOnce(map, 'idle', function(){
         updateMap();
     });
-    
+
 };
 
 function createSearchMarker() {
@@ -932,7 +932,7 @@ $(function () {
             map_pokemons = {}
         }
     });
-
+    
     $('#lured-pokemon-switch').change(function() {
         localStorage["showLuredPokemon"] = this.checked;
         if (this.checked) {
