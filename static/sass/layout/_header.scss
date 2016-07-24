@@ -50,6 +50,12 @@
 				}
 			}
 
+			&[href="#list"] {
+				@include icon('\f0ca');
+				-webkit-tap-highlight-color: rgba(0,0,0,0);
+				 padding-left: 0;
+			}
+
 			& + a[href="#nav"]:last-child {
 				border-left: solid 1px _palette(accent2, border);
 				padding-left: 1.25em;
