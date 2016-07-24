@@ -45,8 +45,8 @@
 	});
 
 	addEventsListener($list, 'click touchend', function(event){
- 		event.stopPropagation();
- 	});
+		event.stopPropagation();
+	});
 
 	// Event: Hide nav on body click/tap.
 	addEventsListener($body, 'click touchend', function(event) {
@@ -65,11 +65,11 @@
 	});
 
 	$listToggle.addEventListener('click', function(event){
- 		event.preventDefault();
- 		event.stopPropagation();
- 		$list.classList.toggle('visible');
- 		$nav.classList.remove('visible');
-  });
+		event.preventDefault();
+		event.stopPropagation();
+		$list.classList.toggle('visible');
+		$nav.classList.remove('visible');
+	});
 
 	// Close.
 
@@ -81,10 +81,10 @@
 	$nav.appendChild($navClose);
 
 	$listClose = document.createElement('a');
-  $listClose.href = '#';
-  $listClose.className = 'close';
-  $listClose.tabIndex = 0;
-  $list.appendChild($listClose);
+	$listClose.href = '#';
+	$listClose.className = 'close';
+	$listClose.tabIndex = 0;
+	$list.appendChild($listClose);
 
 	// Event: Hide on ESC.
 	window.addEventListener('keydown', function(event) {
@@ -102,9 +102,8 @@
 	});
 
 	$listClose.addEventListener('click', function(event){
- 			event.preventDefault();
- 			event.stopPropagation();
- 			$list.classList.remove('visible');
- 	})
-
+		event.preventDefault();
+		event.stopPropagation();
+		$list.classList.remove('visible');
+	})
 })();

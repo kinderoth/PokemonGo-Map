@@ -932,7 +932,7 @@ $(function () {
             map_pokemons = {}
         }
     });
-
+    
     $('#lured-pokemon-switch').change(function() {
         localStorage["showLuredPokemon"] = this.checked;
         if (this.checked) {
