@@ -62,6 +62,7 @@
 		event.stopPropagation();
 		$nav.classList.toggle('visible');
 		$list.classList.remove('visible');
+<<<<<<< e0a4440f6283754fb9b6c28ea57495db3e07eeb2
 	});
 
 	$listToggle.addEventListener('click', function(event){
@@ -69,7 +70,16 @@
 		event.stopPropagation();
 		$list.classList.toggle('visible');
 		$nav.classList.remove('visible');
+=======
+>>>>>>> Initial drop of pokemon list panel
 	});
+
+	$listToggle.addEventListener('click', function(event){
+ 		event.preventDefault();
+ 		event.stopPropagation();
+ 		$list.classList.toggle('visible');
+ 		$nav.classList.remove('visible');
+  });
 
 	// Close.
 
@@ -81,10 +91,17 @@
 	$nav.appendChild($navClose);
 
 	$listClose = document.createElement('a');
+<<<<<<< e0a4440f6283754fb9b6c28ea57495db3e07eeb2
 	$listClose.href = '#';
 	$listClose.className = 'close';
 	$listClose.tabIndex = 0;
 	$list.appendChild($listClose);
+=======
+  $listClose.href = '#';
+  $listClose.className = 'close';
+  $listClose.tabIndex = 0;
+  $list.appendChild($listClose);
+>>>>>>> Initial drop of pokemon list panel
 
 	// Event: Hide on ESC.
 	window.addEventListener('keydown', function(event) {
@@ -102,8 +119,16 @@
 	});
 
 	$listClose.addEventListener('click', function(event){
+<<<<<<< e0a4440f6283754fb9b6c28ea57495db3e07eeb2
 		event.preventDefault();
 		event.stopPropagation();
 		$list.classList.remove('visible');
 	})
+=======
+ 			event.preventDefault();
+ 			event.stopPropagation();
+ 			$list.classList.remove('visible');
+ 	})
+
+>>>>>>> Initial drop of pokemon list panel
 })();
