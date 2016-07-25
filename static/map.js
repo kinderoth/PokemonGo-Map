@@ -439,7 +439,7 @@ function addListeners(marker) {
 function updateList() {
    // Clear out the existing body of the list
    $('#list-content').html('');
-   $.each(map_pokemons, function(key, value) {
+   $.each(map_data.pokemons, function(key, value) {
      $('#list-content').append(getListCard(value));
    });
    $('a[href="#hide"]').on('click', function(event){
